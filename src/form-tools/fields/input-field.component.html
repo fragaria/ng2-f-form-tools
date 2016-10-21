@@ -1,0 +1,13 @@
+<div class="form-group" [formGroup]="form">
+  <label [attr.for]="inputId">{{ fieldLabel }}</label>
+
+  <input [attr.type]="inputType" [attr.id]="inputId" class="form-control"
+         formControlName="{{ controlName }}"
+         [style.color] = "errors[controlName].length ? 'red': 'green'">
+
+  <div *ngIf="showErrors">
+    <div *ngFor='let error of errors[controlName]' class="alert alert-danger">
+      {{ error }}
+    </div>
+  </div>
+</div>

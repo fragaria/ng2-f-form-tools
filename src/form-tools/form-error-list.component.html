@@ -1,0 +1,10 @@
+<div *ngIf="anyError(errors)">
+  <h2 *ngIf="title">{{ title }}</h2>
+  <div class="alert alert-danger">
+    <div *ngFor='let errorSection of errorSections'>
+      <div *ngFor='let error of errors[errorSection]'>
+        {{ error }}
+      </div>
+    </div>
+  </div>
+</div>
