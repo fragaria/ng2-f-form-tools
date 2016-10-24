@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ng2-f-personal-ident-number-field',
-  template: require('./personal-ident-number-field.component.html')
+  templateUrl: 'personal-ident-number-field.component.html'
 })
 export class PersonalIdentNumberFieldComponent {
   @Input() form: FormGroup;

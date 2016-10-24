@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ng2-f-name-field',
-  template: require('./name-field.component.html')
+  templateUrl: 'name-field.component.html'
 })
 export class NameFieldComponent {
   @Input() form: FormGroup;

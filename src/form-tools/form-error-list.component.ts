@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ng2-f-form-error-list',
-  template: require('./form-error-list.component.html')
+  templateUrl: 'form-error-list.component.html'
 })
 export class FormErrorListComponent {
   @Input() form: FormGroup;

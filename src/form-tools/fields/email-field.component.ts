@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ng2-f-email-field',
-  template: require('./email-field.component.html')
+  templateUrl: 'email-field.component.html'
 })
 export class EmailFieldComponent {
   @Input() form: FormGroup;
